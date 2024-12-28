@@ -8,14 +8,13 @@ import LocomotiveScroll from "locomotive-scroll";
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   const [loaderfinish, setLoaderfinish] = useState(false);
-  const [overlayopen,setoverlayopen] = useState(false);
   return (
     <div className="relative ">
       <Loader func={setLoaderfinish} />
       <Navbar />
       <Landing finish={loaderfinish} />
-      <Work change= {setoverlayopen} />
-      <Contact need = {overlayopen} />
+      <Work />
+      <Contact />
     </div>
   );
 }

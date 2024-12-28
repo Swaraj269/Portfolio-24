@@ -2,9 +2,22 @@ import gsap from "gsap";
 import { Flip } from "gsap/all";
 import { motion } from "motion/react";
 import React, { useRef, useState } from "react";
+import bgImage5 from "../assets/Images/bgImage5.png";
+import chitralok1 from "../assets/Images/chitralok1.png";
+import chitralok2 from "../assets/Images/chitralok2.png";
+import exoape1 from "../assets/Images/exoape1.png";
+import exoape2 from "../assets/Images/exoape2.png";
+import obys1 from "../assets/Images/obys1.png";
+import obys3 from "../assets/Images/obys3.png";
+import obys2 from "../assets/Images/obys2.jpg";
+import beast1 from "../assets/Images/beast1.png";
+import beast2 from "../assets/Images/beast2.png";
+import mivi1 from "../assets/Images/mivi1.png";
+import mivi2 from "../assets/Images/mivi3.png";
+import mivi3 from "../assets/Images/mivi2.png";
 
 gsap.registerPlugin(Flip);
-function Work({ change }) {
+function Work() {
   gsap.defaults({
     ease: "cubic-bezier(0.625, 0.05, 0, 1)",
     duration: 0.725,
@@ -21,16 +34,16 @@ function Work({ change }) {
       description:
         "Chitralok is a comprehensive movie and TV show platform where users can explore trending movies, popular TV shows, and celebrity biographies. Each movie and TV show has a dedicated page featuring social media links, availability for rent or purchase, trailers, and related recommendations. For TV shows, users can also view different seasons below the details section. The platform includes a search bar for easy navigation to specific content.",
       tools: ["React", "Tailwind CSS", "Redux", "React NPM packages", "Axios"],
-      img1: "../src/assets/Images/chitralok1.png",
-      img2: "../src/assets/Images/chitralok2.png",
+      img1: { chitralok1 },
+      img2: { chitralok2 },
       live: "https://chitra-lok.vercel.app/",
     },
     {
       description:
         "A clone of the ExoApe landing page, an award-winning modern website. This project deepened my understanding of creating animated, visually appealing websites using React and GSAP.",
       tools: ["React", "Tailwind CSS", "GSAP", "Locomotive Scroll"],
-      img1: "../src/assets/Images/exoape1.png",
-      img2: "../src/assets/Images/exoape2.png",
+      img1: { exoape1 },
+      img2: { exoape2 },
       live: "https://exo-ape-u7v3.vercel.app/",
     },
     {
@@ -44,33 +57,33 @@ function Work({ change }) {
         "Locomotive Scroll",
         "Shery.js",
       ],
-      img1: "../src/assets/Images/obys1.png",
-      img2: "../src/assets/Images/obys3.png",
+      img1: { obys1 },
+      img2: { obys3 },
       live: "https://obys-agency-sand.vercel.app/",
     },
     {
       description:
         "This was a project for a national-level front-end hackathon, where we reimagined the website for Beast Life, an Indian brand famous for its high-quality supplements. Our team ranked among the top 25 nationwide. This project focused on redesigning and improving the website’s design, animations, and responsiveness.",
       tools: ["HTML", "CSS", "JavaScript", "GSAP", "Locomotive Scroll"],
-      img1: "../src/assets/Images/obys1.png",
-      img2: "../src/assets/Images/obys3.png",
+      img1: { beast1 },
+      img2: { beast2 },
       live: "https://web-start-reimagine-round1.vercel.app/",
     },
     {
       description:
         "This was another project for the same hackathon, where we reimagined the website for Mivi, a leading Indian brand known for its earphones, speakers, and earbuds. Our team ranked among the top 25 nationwide. This project introduced me to frame animations and further improved my design and responsiveness skills.",
       tools: ["HTML", "CSS", "JavaScript", "GSAP", "Locomotive Scroll"],
-      img1: "../src/assets/Images/mivi1.png",
-      img2: "../src/assets/Images/mivi3.png",
+      img1: { mivi1 },
+      img2: { mivi2 },
       live: "https://web-start-reimagine-round2.vercel.app/",
     },
   ];
   var imgSrc = [
     "https://a.storyblok.com/f/133769/2400x2990/540fb12941/columbia-pictures-thumbnail.jpg/m/1300x1620/filters:quality(90)",
     "https://a.storyblok.com/f/133769/2409x3000/c155d3e27e/amaterasu-hero.jpg/m/1300x1619/filters:quality(90)",
-    "../src/assets/Images/obys2.jpg",
+    obys2,
     "https://cdn.shopify.com/s/files/1/0690/7723/7977/files/Image07_51f2d9f3-83af-4192-a58c-bb92525d8efb_720x720.jpg?v=1715278358",
-    "../src/assets/Images/mivi2.png",
+    mivi3,
   ];
   const titlehandler = (idx) => {
     const imageItems = document.querySelectorAll(".main-img-items");
@@ -202,13 +215,9 @@ function Work({ change }) {
     });
   };
   return (
-    <div className="w-full  bg-black relative  flex items-center justify-center">
+    <div className="works w-full  bg-black relative  flex items-center justify-center">
       <div className="bgimage h-screen w-full ">
-        <img
-          className="h-full w-full object-cover"
-          src="./src/assets/Images/bgImage5.png"
-          alt=""
-        />
+        <img className="h-full w-full object-cover" src={bgImage5} alt="" />
       </div>
       <div className="page3container p-6  md:p-12 h-screen w-full top-0 left-0 z-[2] absolute ">
         <div className="main flex flex-col-reverse lg:flex-row  opacity-[1] h-full w-full   ">
@@ -363,7 +372,6 @@ function Work({ change }) {
                 );
               }
             })}
-            
           </div>
         </div>
       </div>

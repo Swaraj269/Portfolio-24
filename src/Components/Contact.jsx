@@ -3,11 +3,24 @@ import React, { useEffect } from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import bgImage3 from "../assets/Images/bgImage3.png"
 function Contact({ need }) {
   const social = [
-    { name: "LinkedIn", icon: <FaLinkedinIn />, link: "" },
-    { name: "Instagram", icon: <FaInstagram /> },
-    { name: "Github", icon: <FaGithub /> },
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedinIn />,
+      link: "https://www.linkedin.com/in/swaraj-singh-47aa682a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      name: "Instagram",
+      icon: <FaInstagram />,
+      link: "https://www.instagram.com/swarajsingh._/profilecard/?igsh=dzYxdHhiNzA5NG41",
+    },
+    {
+      name: "Github",
+      icon: <FaGithub />,
+      link: "https://github.com/Swaraj269",
+    },
   ];
   useEffect(() => {}, [need]);
   return (
@@ -15,7 +28,7 @@ function Contact({ need }) {
       <div className="bgimage pointer-events-none h-full absolute z-[-1] w-full  ">
         <img
           className="h-full w-full object-cover"
-          src="../src/assets/Images/bgImage3.png"
+          src=  {bgImage3}
           alt=""
         />
       </div>
@@ -84,7 +97,7 @@ function Contact({ need }) {
               return (
                 <a
                   key={idx}
-                  href={``}
+                  href={elem.link}
                   className="link flex gap-8 cursor-pointer active:scale-[0.98] origin-left items-center py-2 md:py-4 text-white text-3xl md:text-4xl lg:text-4xl"
                   target="_blank"
                   rel="noopener noreferrer"

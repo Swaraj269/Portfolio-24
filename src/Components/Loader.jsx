@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef } from "react";
-
+import bgImage2 from "../assets/Images/bgImage2.png"
 function Loader( {func} ) {
   const laserref = useRef();
   const loaderref = useRef();
@@ -61,7 +61,7 @@ function Loader( {func} ) {
         <div className="bgimage flex absolute z-[0] top-0 left-0  h-full w-full ">
           <img
             className="h-full w-full object-cover"
-            src="../src/assets/Images/bgImage2.png"
+            src={bgImage2}
             alt=""
           />
         </div>

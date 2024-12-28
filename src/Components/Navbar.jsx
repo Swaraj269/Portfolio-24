@@ -38,16 +38,22 @@ function Navbar() {
       </div>
       <div className="rightnav">
         <div className="rightnavcontainer flex items-center gap-12 ">
-          <div className="links hidden md:block cursor-pointer w-fit">
-            <h1 className="text-white leading-[1.15] md:text-[2.4vw] lg:text-[1.3vw] font-[satoshilight]">
+          <div className="links hidden  cursor-pointer w-fit">
+            <a
+              href=".aboutpage"
+              className="text-white leading-[1.15] md:text-[2.4vw] lg:text-[1.3vw] font-[satoshilight]"
+            >
               About
-            </h1>
+            </a>
             <div className="w-0 h-[0.15vw] underline2"></div>
           </div>
-          <div className="links hidden md:block mr-[-1vw] cursor-pointer w-fit">
-            <h1 className="text-white leading-[1.15] md:text-[2.4vw] lg:text-[1.3vw] font-[satoshilight]">
+          <div className="links hidden  mr-[-1vw] cursor-pointer w-fit">
+            <a
+              href=".works"
+              className="text-white leading-[1.15] md:text-[2.4vw] lg:text-[1.3vw] font-[satoshilight]"
+            >
               Work
-            </h1>
+            </a>
             <div className="w-0 h-[0.15vw] underline2"></div>
           </div>
           <div className="resumelink  md:text-white bg-white md:bg-transparent text-black   cursor-pointer rounded active:scale-[0.95] hover:text-black hover:bg-white px-6 py-3 flex items-center gap-4 w-fit">

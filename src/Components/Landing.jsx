@@ -4,6 +4,9 @@ import { ScrollTrigger } from "gsap/all";
 import { motion } from "motion/react";
 gsap.registerPlugin(ScrollTrigger);
 import React, { useEffect } from "react";
+import bgImage7 from "../assets/Images/bgImage7.png"
+import bgImage1 from "../assets/Images/bgImage1.png"
+import photo from "../assets/Images/Photo.jpeg"
 function Landing({ finish }) {
   const skill = [
     "HTML",
@@ -101,7 +104,7 @@ function Landing({ finish }) {
         <div className="bgimage h-full w-full">
           <img
             className="h-full w-full object-cover"
-            src="../src/assets/Images/bgImage7.png"
+            src={bgImage7}
             alt=""
           />
         </div>
@@ -171,7 +174,7 @@ function Landing({ finish }) {
             <div className="bgImage h-full w-full ">
               <img
                 className="h-full w-full object-cover"
-                src="../src/assets/Images/bgImage1.png"
+                src={bgImage1}
                 alt=""
               />
             </div>
@@ -191,7 +194,7 @@ function Landing({ finish }) {
                       viewport={{ once: true }}
                       transition={{ duration: 3, ease: "easeOut" }}
                       className="h-full w-full object-cover"
-                      src="../src/assets/Images/Photo.jpeg"
+                      src={photo}
                       alt=""
                     />
                   </div>
