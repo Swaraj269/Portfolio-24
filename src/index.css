@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "pp-ultralightItalic";
+  src: url(./assets/Fonts/PPHatton-UltralightItalic.otf);
+}
+@font-face {
+  font-family: "pp-ultralight";
+  src: url(./assets/Fonts/PPHatton-Ultralight.otf);
+}
+
+@font-face {
+  font-family: "pp-medium";
+  src: url(./assets/Fonts/PPHatton-Medium.otf);
+}
+
+@font-face {
+  font-family: "pp-mediumItalic";
+  src: url(./assets/Fonts/PPHatton-MediumItalic.otf);
+}
+
+@font-face {
+  font-family: "pp-bold";
+  src: url(./assets/Fonts/PPHatton-Bold.otf);
+}
+@font-face {
+  font-family: "helvetica";
+  src: url(./assets/Fonts/Helvetica.ttf);
+}
+@font-face {
+  font-family: "helveticalight";
+  src: url(./assets/Fonts/helvetica-light-587ebe5a59211.ttf);
+}
+@font-face {
+  font-family: "satoshilight";
+  src: url(./assets/Fonts/Satoshi-Light.woff2);
+}
+@font-face {
+  font-family: "satoshiregular";
+  src: url(./assets/Fonts/Satoshi-Regular.woff2);
+}
+@font-face {
+  font-family: "satoshibold";
+  src: url(./assets/Fonts/Satoshi-Bold.woff2);
+}
+* {
+  font-family: "pp-ultralightItalic";
+}
+
+.laser-loader,
+.underline,
+.underline2,
+.dot2 {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 0.5),
+    rgba(0, 0, 255, 1),
+    rgba(0, 0, 255, 0.5)
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.6),
+    0 0 40px rgba(0, 0, 255, 0.4);
+  border-radius: 6px;
+}
+
+.loadingtext {
+  animation: fontFamilyChange 0.8s linear infinite;
+}
+
+@keyframes fontFamilyChange {
+  0% {
+    font-family: "pp-ultralightItalic";
+  }
+  25% {
+    font-family: "satoshiregular";
+  }
+  50% {
+    font-family: "pp-ultralight";
+  }
+  75% {
+    font-family: "helvetica";
+  }
+  100% {
+    font-family: "pp-ultralightItalic";
+  }
+}
+
+.loader {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.dot {
+  background-color: #00ff00;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.6),
+    0 0 50px 20px rgba(0, 255, 0, 0.4);
+  animation: glow 1.5s infinite alternate;
+}
+.resumelink:hover .anotherlink {
+  color: black;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.6),
+      0 0 50px 20px rgba(0, 255, 0, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 30px 15px rgba(0, 255, 0, 0.8),
+      0 0 60px 30px rgba(0, 255, 0, 0.5);
+  }
+}
+
+.underline2,
+.resumelink {
+  transition: all 0.3s ease-out;
+}
+
+.links:hover .underline2 {
+  width: 100%;
+}
+
+.main-title-list:hover:has(.main-title-item:hover)
+  .main-title-item:not(:hover) {
+  opacity: 0.35;
+}
+.socials:hover:has(.link:hover) .link:not(:hover) {
+  opacity: 0.35;
+}
+
+.main-title::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 20px;
+  height: 10px;
+  right: -1.5vw;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0, 0.55, 0.45, 1);
+  transform: translate(60%, 0%) scale(0);
+}
+
+.main-title-item:hover .main-title::after {
+  transform: translate(0%, 0%) scale(1);
+  opacity: 1;
+  width: 10px;
+}
+
+.overlay-items.active {
+  display: block;
+}
+
+.overlay-title-wrap .main-title {
+  position: absolute;
+  font-size: 15vw;
+}
+
+ul {
+  list-style-type: square;
+  line-height: 1.5;
+}
+li {
+  font-family: helvetica;
+}
