@@ -116,7 +116,7 @@ function Landing({ finish }) {
             </h1>
           </div>
         </div>
-        <div className="abouttoscroll absolute left-[50%] bottom-[7%] translate-x-[-50%] ">
+        <div className="abouttoscroll absolute left-[50%] bottom-[12%] lg:bottom-[7%] translate-x-[-50%] ">
           <div className="text overflow-hidden w-full text-white text-sm ">
             <h1 className="font-[satoshiregular]">
               Scroll down to uncover more
@@ -179,9 +179,9 @@ function Landing({ finish }) {
               />
             </div>
             <div className="aboutcontent flex flex-col-reverse md:flex-row justify-between h-full w-full absolute top-0 left-0  px-6 md:px-12 ">
-              <div className="photosection py-4 md:py-12 flex gap-2 h-full  w-full md:w-[30%] ">
+              <div className="photosection py-4 bg-red-300 md:py-12 flex  gap-2 h-[32%] lg:h-full  w-full md:w-[30%] ">
                 <div className="photo h-full w-[100%] flex justify-start items-end md:items-start ">
-                  <div className="imagediv overflow-hidden h-[68vw] w-[50vw] md:h-[55vw] md:w-[30vw]  lg:h-[35vw] lg:w-[25vw] ">
+                  <div className="imagediv overflow-hidden h-[66vw] w-[50vw] md:h-[55vw] md:w-[30vw]  lg:h-[35vw] lg:w-[25vw] ">
                     <motion.img
                       initial={{
                         opacity: 0,
@@ -200,7 +200,7 @@ function Landing({ finish }) {
                   </div>
                 </div>
               </div>
-              <div className="aboutsection flex flex-col jusitfy-end pt-16 gap-3 h-full w-full md:w-[50%] text-white ">
+              <div className="aboutsection bg-blue-300 flex flex-col jusitfy-end pt-16 gap-3 h-[68%] lg:h-full w-full md:w-[50%] text-white ">
                 <h1 className="overflow-hidden  text-[17vw] md:text-[9vw] lg:text-[9vw] leading-[1]">
                   <motion.span
                     initial={{ y: "100%", opacity: 0 }}

@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import React from "react";
 import { TfiDownload } from "react-icons/tfi";
-
+import resume from "../assets/Swaraj CV New-1.pdf";
 function Navbar() {
   const mouseenter = () => {
     gsap.to(".leftnavtexts h1", {
@@ -18,7 +18,7 @@ function Navbar() {
     });
   };
   return (
-    <div className="w-full fixed flex items-center justify-between px-6 md:px-12 z-[200] top-0 left-0 h-24 ">
+    <div className="w-full backdrop-blur-sm fixed flex items-center justify-between px-6 md:px-12 z-[200] top-0 left-0 h-24 ">
       <div className="leftnav">
         <div
           onMouseEnter={mouseenter}
@@ -56,7 +56,11 @@ function Navbar() {
             </a>
             <div className="w-0 h-[0.15vw] underline2"></div>
           </div>
-          <div className="resumelink  md:text-white bg-white md:bg-transparent text-black   cursor-pointer rounded active:scale-[0.95] hover:text-black hover:bg-white px-6 py-3 flex items-center gap-4 w-fit">
+          <a
+            href={resume}
+            download
+            className="resumelink  md:text-white bg-white md:bg-transparent text-black   cursor-pointer rounded active:scale-[0.95] hover:text-black hover:bg-white px-6 py-3 flex items-center gap-4 w-fit"
+          >
             <div className="icon text-md  md:text-md ">
               {" "}
               <TfiDownload />{" "}
@@ -67,7 +71,7 @@ function Navbar() {
               </h1>
               <div className="w-0 h-[0.15vw] underline2"></div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

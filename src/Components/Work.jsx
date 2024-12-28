@@ -287,7 +287,7 @@ function Work() {
             </div>
           </div>
         </div>
-        <div className="overlay  h-screen w-full pointer-events-none top-0 left-0 absolute z-[4] ">
+        <div className="overlay  h-[140vh] lg:h-screen w-full pointer-events-none top-0 left-0 absolute z-[4] ">
           {overcontent.map((elem, idx) => {
             return (
               <div
@@ -308,14 +308,14 @@ function Work() {
                   <div className="rowpart h-[50%] w-full flex flex-col lg:flex-row item-center justify-end ">
                     <div className="rowchild flex flex-col md:flex-row items-start md:items-center justify-between text-white h-full w-full lg:w-[60%]">
                       <div className="textsection flex flex-col gap-5 justify-center h-[50%]  md:h-full w-full md:w-[50%] ">
-                        <h1 className="text-3xl md:text-4xl lg:text-3xl">
+                        <h1 className="text-4xl  lg:text-3xl">
                           Description
                         </h1>
-                        <p className=" text-lg lg:text-lg md:text-xl font-[helvetica] text-pretty leading-[1.15]">
+                        <p className=" text-xl lg:text-lg md:text-xl font-[helvetica] text-pretty leading-[1.3] md:leading-[1.15]">
                           {elem.description}
                         </p>
                       </div>
-                      <div className="imgsection mt-16 md:mt-0 md:aspect-auto self-center h-[40%] md:h-[80%] md:self-left py-0 md:py-0 rounded-md w-[100%] md:w-[45%] flex items-center justify-end">
+                      <div className="imgsection mt-8 md:mt-0 md:aspect-auto self-center h-[40%] md:h-[80%] md:self-left py-0 md:py-0 rounded-md w-[100%] md:w-[45%] flex items-center justify-end">
                         <img
                           className="h-full w-full object-cover"
                           src={elem.img1}
@@ -325,8 +325,8 @@ function Work() {
                     </div>
                   </div>
                   <div className="rowpart h-[50%] w-full flex item-center justify-start">
-                    <div className="rowchild flex items-center justify-between text-white h-full w-full lg:w-[40%]">
-                      <div className="imgsection h-[30vw] lg:h-[20vw] rounded-md w-[45%] lg:w-[35%] flex items-center justify-end">
+                    <div className="rowchild flex flex-col-reverse lg:flex-row items-start justify-end lg:items-center lg:justify-between text-white h-full w-full lg:w-[40%]">
+                      <div className="imgsection h-[80vw] lg:h-[20vw] rounded-md w-[60%] lg:w-[35%] flex items-center justify-end">
                         <img
                           className="h-full w-full object-cover"
                           src={elem.img2}
@@ -349,7 +349,7 @@ function Work() {
               </div>
             );
           })}
-          <div className="overlay-nav  pointer-events-auto  absolute px-12 z-[4] top-[51%]  lg:bottom-[10%] left-0 right-0 overflow-hidden flex items-center justify-between hidden ">
+          <div className="overlay-nav  pointer-events-auto  absolute px-12 z-[4] top-[38%]  lg:bottom-[10%] left-0 right-0 overflow-hidden flex items-center justify-between hidden ">
             <h3
               onClick={() => closeOverlay()}
               data-overlay="nav-item"
