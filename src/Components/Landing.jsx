@@ -179,9 +179,9 @@ function Landing({ finish }) {
               />
             </div>
             <div className="aboutcontent flex flex-col-reverse md:flex-row justify-between h-full w-full absolute top-0 left-0  px-6 md:px-12 ">
-              <div className="photosection py-4 bg-red-300 md:py-12 flex  gap-2 h-[32%] lg:h-full  w-full md:w-[30%] ">
+              <div className="photosection py-0  md:py-12 flex  gap-2 h-[32%] lg:h-full  w-full md:w-[30%] ">
                 <div className="photo h-full w-[100%] flex justify-start items-end md:items-start ">
-                  <div className="imagediv overflow-hidden h-[66vw] w-[50vw] md:h-[55vw] md:w-[30vw]  lg:h-[35vw] lg:w-[25vw] ">
+                  <div className="imagediv overflow-hidden h-[65vw] w-[48vw] md:h-[55vw] md:w-[30vw]  lg:h-[35vw] lg:w-[25vw] ">
                     <motion.img
                       initial={{
                         opacity: 0,
@@ -200,8 +200,8 @@ function Landing({ finish }) {
                   </div>
                 </div>
               </div>
-              <div className="aboutsection bg-blue-300 flex flex-col jusitfy-end pt-16 gap-3 h-[68%] lg:h-full w-full md:w-[50%] text-white ">
-                <h1 className="overflow-hidden  text-[17vw] md:text-[9vw] lg:text-[9vw] leading-[1]">
+              <div className="aboutsection  flex flex-col jusitfy-end pt-8 lg:pt-16 gap-3 h-[68%] lg:h-full w-full md:w-[50%] text-white ">
+                <h1 className="overflow-hidden  text-[15vw] md:text-[9vw] lg:text-[9vw] leading-[1]">
                   <motion.span
                     initial={{ y: "100%", opacity: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
@@ -212,7 +212,7 @@ function Landing({ finish }) {
                     About
                   </motion.span>
                 </h1>
-                <div className="about overflow-hidden text-[4vw] md:text-[2.3vw] lg:text-[1.4vw] ">
+                <div className="about mt-3 md:mt-0 overflow-hidden text-[4vw] md:text-[2.3vw] lg:text-[1.4vw] ">
                   <motion.p
                     initial={{ y: "15%", opacity: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
@@ -230,14 +230,14 @@ function Landing({ finish }) {
                     something extraordinary too. Let’s make the web a better
                     place, one click at a time!
                   </motion.p>
-                  <div className="skills mt-6 lg:mt-8">
+                  <div className="skills  mt-4 lg:mt-8">
                     <h1 className="text-2xl lg:text-4xl">Where I Shine</h1>
                     <motion.div
                       variants={parentVarient}
                       initial="hidden"
                       whileInView="visible"
                       transition={{ duration: 1.2, ease: "easeOut" }}
-                      className="skill mt-3 flex gap-3 items-center flex-wrap "
+                      className="skill mt-3  flex gap-3 items-center flex-wrap "
                     >
                       {skill.map((elem, idx) => {
                         return (
