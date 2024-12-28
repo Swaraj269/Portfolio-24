@@ -34,16 +34,16 @@ function Work() {
       description:
         "Chitralok is a comprehensive movie and TV show platform where users can explore trending movies, popular TV shows, and celebrity biographies. Each movie and TV show has a dedicated page featuring social media links, availability for rent or purchase, trailers, and related recommendations. For TV shows, users can also view different seasons below the details section. The platform includes a search bar for easy navigation to specific content.",
       tools: ["React", "Tailwind CSS", "Redux", "React NPM packages", "Axios"],
-      img1: { chitralok1 },
-      img2: { chitralok2 },
+      img1: chitralok1,
+      img2: chitralok2,
       live: "https://chitra-lok.vercel.app/",
     },
     {
       description:
         "A clone of the ExoApe landing page, an award-winning modern website. This project deepened my understanding of creating animated, visually appealing websites using React and GSAP.",
       tools: ["React", "Tailwind CSS", "GSAP", "Locomotive Scroll"],
-      img1: { exoape1 },
-      img2: { exoape2 },
+      img1: exoape1,
+      img2: exoape2,
       live: "https://exo-ape-u7v3.vercel.app/",
     },
     {
@@ -57,24 +57,24 @@ function Work() {
         "Locomotive Scroll",
         "Shery.js",
       ],
-      img1: { obys1 },
-      img2: { obys3 },
+      img1: obys1,
+      img2: obys3,
       live: "https://obys-agency-sand.vercel.app/",
     },
     {
       description:
         "This was a project for a national-level front-end hackathon, where we reimagined the website for Beast Life, an Indian brand famous for its high-quality supplements. Our team ranked among the top 25 nationwide. This project focused on redesigning and improving the website’s design, animations, and responsiveness.",
       tools: ["HTML", "CSS", "JavaScript", "GSAP", "Locomotive Scroll"],
-      img1: { beast1 },
-      img2: { beast2 },
+      img1: beast1,
+      img2: beast2,
       live: "https://web-start-reimagine-round1.vercel.app/",
     },
     {
       description:
         "This was another project for the same hackathon, where we reimagined the website for Mivi, a leading Indian brand known for its earphones, speakers, and earbuds. Our team ranked among the top 25 nationwide. This project introduced me to frame animations and further improved my design and responsiveness skills.",
       tools: ["HTML", "CSS", "JavaScript", "GSAP", "Locomotive Scroll"],
-      img1: { mivi1 },
-      img2: { mivi2 },
+      img1: mivi1,
+      img2: mivi2,
       live: "https://web-start-reimagine-round2.vercel.app/",
     },
   ];
