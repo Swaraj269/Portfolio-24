@@ -32,7 +32,7 @@ function Navbar() {
             </span>
           </h1>
           <h1 className="h-full flex items-center  w-full">
-            <span className="text-white text-[1.9vw]">Potfolio'24</span>
+            <span className="text-white text-[1.9vw]">Portfolio'24</span>
           </h1>
         </div>
       </div>
