@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import React from "react";
 import { TfiDownload } from "react-icons/tfi";
-import resume from "../assets/Swaraj-Singh-CV.pdf";
+import resume from "../assets/SwarajSingh Resume - NIT Goa (1).pdf";
 function Navbar() {
   const mouseenter = () => {
     gsap.to(".leftnavtexts h1", {
